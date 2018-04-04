@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bg"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.firdasahidi.carbuddy.ui.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_carousel"
+        android:layout_height="wrap_content">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:fillColor="#FFFFFFFF"
+            app:pageColor="#00000000"
+            app:autoPlay="false"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_carousel"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_scan"
+                android:drawableTop="@drawable/ic_search_black_48dp"
+                android:drawableTint="#000000"
+                android:paddingTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_white"
+                android:layout_weight="1.0"
+                android:text="Start Scanning" />
+
+            <Button
+                android:id="@+id/btn_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_history_black_48dp"
+                android:drawableTint="#000000"
+                android:paddingTop="30dp"
+                android:background="@drawable/button_white"
+                android:layout_weight="1.0"
+                android:text="History" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_dash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_slow_motion_video_black_48dp"
+                android:drawableTint="#000000"
+                android:paddingTop="30dp"
+                android:background="@drawable/button_white"
+                android:layout_weight="1.0"
+                android:text="Dashboard" />
+
+            <Button
+                android:id="@+id/btn_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_assignment_black_48dp"
+                android:drawableTint="#000000"
+                android:paddingTop="30dp"
+                android:background="@drawable/button_white"
+                android:layout_weight="1.0"
+                android:text="Detail" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

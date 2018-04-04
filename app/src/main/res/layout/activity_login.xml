@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.firdasahidi.carbuddy.ui.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/login_bg"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:id="@+id/logo_carbuddy"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo_carbuddy"/>
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/logo_carbuddy"
+            android:hint="  Email Address"
+            android:textColorHint="#B3B3B3"
+            android:textColor="#B3B3B3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_email_white_18dp"
+            android:drawableTint="#B3B3B3"
+            android:layout_marginTop="70dp"
+            android:typeface="normal"
+            android:background="@drawable/textfield_style"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textColorHint="#B3B3B3"
+            android:textColor="#B3B3B3"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_email"
+            android:hint="  Password"
+            android:drawableLeft="@drawable/ic_lock_white_18dp"
+            android:drawableTint="#B3B3B3"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:typeface="normal"
+            android:background="@drawable/textfield_style"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="sans-serif"/>
+
+        <Button
+            android:id="@+id/btn_logins"
+            android:background="@drawable/rounded_button"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:text="LOGIN"
+            android:layout_below="@+id/et_password"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:id="@+id/btn_signups"
+            android:layout_below="@+id/btn_logins"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="Do not have account? SIGN UP"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
